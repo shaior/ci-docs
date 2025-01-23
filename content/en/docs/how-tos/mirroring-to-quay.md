@@ -64,7 +64,7 @@ Additionally, you will need to add a new Periodic job
 any of the jobs as sample and simply replace all occurences of the value found in the `ci.openshift.io/area` label
 (e.g. `knative`) with the name of your repository (which should be the same as the name of the directory you created).
 
-In oder to push images to an external  repository, credentials are needed. Use `docker` or `podman` to create a docker config
+In order to push images to an external  repository, credentials are needed. Use `docker` or `podman` to create a docker config
 file as described [here](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/#log-in-to-docker)
 and then use our [self-service portal](/docs/how-tos/adding-a-new-secret-to-ci/#add-a-new-secret) to add it to the clusters,
 using the following keys in Vault:
